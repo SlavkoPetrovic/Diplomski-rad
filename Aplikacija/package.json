@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "formidable": "^3.5.1",
+    "multer": "^1.4.5-lts.1",
+    "weaviate": "^0.0.14",
+    "weaviate-client": "^2.14.5"
+  }
+}
