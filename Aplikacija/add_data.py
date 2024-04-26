@@ -23,7 +23,7 @@ def define_collection(client: WeaviateClient) -> bool:
     client.collections.create(
         name=COLLECTION_NAME,
        vector_index_config=wvc.config.Configure.VectorIndex.hnsw(
-            distance_metric=wvc.config.VectorDistance.MANHATTAN
+            distance_metric=wvc.config.VectorDistance.COSINE
         ),
         vectorizer_config=wvc.config.Configure.Vectorizer.multi2vec_clip(
             image_fields=["image"],
